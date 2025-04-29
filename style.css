@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e5ddd5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+  
+  #chatbot-button:hover {
+    background-color: #20b354;
+  }
+  
+  #chatbot-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  #chat-header {
+    background-color: #075E54;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  #close-btn {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  #chat-body {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background: #e5ddd5;
+  }
+  
+  #chat-footer {
+    display: flex;
+    border-top: 1px solid #ccc;
+    background: #f0f0f0;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 5px;
+  }
+  
+  #send-btn {
+    padding: 0 15px;
+    background: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  #send-btn:hover {
+    background: #20b354;
+  }
+  
+  .user-message, .bot-message {
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .user-message {
+    background: #DCF8C6;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  .bot-message {
+    background: #FFFFFF;
+    align-self: flex-start;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
