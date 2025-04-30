@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('imj1.png'); /* Changed to use image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .top-bar {
+    width: 100%;
+    padding: 13px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(4, 20, 109, 0.3); /* semi-transparent black */
+    backdrop-filter: blur(4px);     /* optional: adds blur effect behind */
+  }
+  
+  
+  .sign-in-btn {
+    background: rgb(245, 243, 243);
+    color: #080808;
+    border: none;
+    padding: 13px 26px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .sign-in-btn:hover {
+    background: #faf8f8;
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+  }
+  
+  .signin-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px 60px; /* increased padding for larger box */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    min-width: 350px; /* set minimum width */
+  }
+  
+  .signin-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 220px;
+    font-size: 16px;
+    border: 1px solid #f3f1f1;
+    border-radius: 4px;
+  }
+  
+  .signin-form button {
+    margin-top: 16px;
+    background: #0f0f0f;
+    color: #faf7f7;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signin-form button:hover {
+    background: #070707;
+  }
+  
+  .welcome-text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column; /* stack lines vertically */
+    gap: 10px;
+    text-align: center;
+  }
+  
+  
+  /* Styling for each word in the welcome text */
+  .word {
+    opacity: 0; /* Start with the word hidden */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+  }
+  
+  /* Animation for fading in each word */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Slightly translate from below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
