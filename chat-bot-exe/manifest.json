@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Chatbot",
+    "version": "1.0.0",
+    "description": "A WhatsApp-like chatbot integrated into Chrome",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "assets/icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "icons": {
+      "48": "assets/icon.png"
+       
+    }
+  }
